@@ -1,18 +1,4 @@
-/*!
-=========================================================
-* JohnDoe Landing page
-=========================================================
 
-* Copyright: 2019 DevCRUD (https://devcrud.com)
-* Licensed: (https://devcrud.com/licenses)
-* Coded by www.devcrud.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// smooth scroll
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
 
@@ -40,6 +26,7 @@ $(window).on("load", function() {
             duration: 750,
             easing: "linear",
             queue: !1
+            //test phrase: 1,2 
         }
     }), $(".filters a").click(function() {
         $(".filters .active").removeClass("active"), $(this).addClass("active");
@@ -48,6 +35,7 @@ $(window).on("load", function() {
             filter: i,
             animationOptions: {
                 duration: 750,
+                //presentations demand: seet 1
                 easing: "linear",
                 queue: !1
             }
@@ -62,10 +50,12 @@ function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 40.674, lng: -73.945},
         zoom: 12,
+        //featuretype: check durations status to 0.1;
         scrollwheel:  false,
         navigationControl: false,
         mapTypeControl: false,
         scaleControl: false,
+        //control-feature: set limit to 1.s
       styles: [
         {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
         {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
